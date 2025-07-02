@@ -74,7 +74,7 @@ while True:
     if detection :
         cv.putText(rendered_frame, "SHAKE HANDS", (10,90), cv.FONT_HERSHEY_COMPLEX, 1.0, (255,0,0), 2)
         if arm_status == # ALREADY IN RAISED POSITION :
-            arm_status = # REMAIN THE SAME AND DO NOTHING
+            pass
         else :
             # ROBOT SHAKE HANDS ID = 1
             arm_status = # IN SHAKE HAND POSITION
@@ -82,7 +82,7 @@ while True:
     else :
         cv.putText(rendered_frame, "RELEASE ARM", (10,90), cv.FONT_HERSHEY_COMPLEX, 1.0, (255,0,0), 2)
         if arm_status == # ALREADY RELEASED :
-            arm_status = # REMAIN THE SAME AND DO NOTHING
+            pass
         else :
             # ROBOT RELEASE ARM ID = 0
             arm_status = # IN RELEASED POSITION
